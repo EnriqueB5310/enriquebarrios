@@ -1,0 +1,372 @@
+
+
+
+* {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+
+}
+
+body {
+  background-color: #fcfbfb;
+  background-image: url("imgs/hero-bg.png");
+ 
+ 
+}
+
+
+.projects
+{
+  text-align: center;
+  padding-top: 6rem;
+}
+.main  {
+
+  text-align: center;
+  padding-top: 4rem;
+  
+}
+
+
+.techIcons {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.techIcons img {
+  width: 10%;
+  margin: 0px 10px 10px 10px;
+}
+
+
+
+.projects h1 {
+ border-bottom: 3px solid purple;
+ line-height: 0.1em;
+
+}
+
+.projects h1 span {
+ background-color: #fcfbfb
+
+}
+
+
+.project-container {
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.project-card {
+background-color: white;
+width: 98%;
+border-radius: 8px;
+padding-bottom: 1rem ;
+border-style: solid;
+border-width: 0.25px;
+margin-bottom: 1rem;
+box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.project-card img {
+  max-width: 100%;
+  max-height: auto;
+}
+
+.demo-btn {
+  color: white;
+  background-color: blue;
+  border: none;
+  text-decoration: none;
+  padding: 5px 10px;
+ 
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  transition-duration: 200ms;
+
+}
+
+.demo-btn:hover {
+  background-color: #4778ff
+}
+
+.repo-btn {
+  color: white;
+  background-color: purple;
+  border: none;
+  text-decoration: none;
+  padding: 5px 10px;
+  
+  font-size: 1.2rem;
+  transition-duration: 200ms;
+}
+
+.repo-btn:hover {
+  background-color: #ab3df5
+}
+
+.project-card p {
+
+  word-wrap: break-word;
+  margin-bottom: 1rem;
+
+}
+
+.main img {
+max-width:100%;
+max-height:100%;
+margin-top: 1.8rem;
+}
+
+.main p {
+ 
+  font-style: italic;
+  color: grey;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+}
+
+.project-btn {
+ 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+ background-color: #6150dc;
+  border-radius: 8px;
+  transition-duration: 200ms;
+  margin-top: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.project-btn:hover {
+ background-color: #7e6fe8; 
+}
+
+
+.header {
+  background-color:white;
+  position: fixed;
+
+  width: 100%;
+  z-index: 3;
+}
+
+.header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+
+  text-decoration: none;
+  color: black;
+}
+
+.header li a {
+  display: block;
+  padding: 20px 20px;
+  
+  text-decoration: none;
+  color: black;
+}
+
+.header li a:hover,
+.header .menu-btn:hover {
+  background-color: #f2f0f0;
+  text-decoration: underline;
+  transition-duration: 200ms;
+}
+
+.header .logo h3 {
+  display: block;
+  float: left;
+  font-size: 2em;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: black;
+  font-family: Brush Script MT;
+}
+
+
+
+
+.bio {
+  margin-top: 2.4rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* menu */
+.header {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+
+}
+
+.navbar {
+
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+
+}
+.header .menu {
+  clear: both;
+  max-height: 0;
+  transition: max-height .2s ease-out;
+}
+
+/* menu icon */
+
+.header .menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  float: right;
+  padding: 28px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.header .menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.header .menu-icon .navicon:before,
+.header .menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.header .menu-icon .navicon:before {
+  top: 5px;
+}
+
+.header .menu-icon .navicon:after {
+  top: -5px;
+}
+
+/* menu btn */
+
+.header .menu-btn {
+  display: none;
+}
+
+.header .menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+
+@media (min-width: 48em) {
+  .header li {
+    float: left;
+  }
+  .header li a {
+    padding: 20px 30px;
+  }
+  .header .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+  .header .menu-icon {
+    display: none;
+  }
+
+  .main {
+padding-top: 80px;
+    
+  }
+
+  
+.main img  {
+  width: 30%;
+}
+.socials img {
+  width: 5%;
+}
+  
+}
