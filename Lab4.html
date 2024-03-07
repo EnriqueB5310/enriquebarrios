@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Confirmation</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container {
+        max-width: 800px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Welcome to Our Store!</h1>
+    <script>
+        alert("Welcome to Our Store!");
+        let name = prompt("Enter your name:");
+        let item = prompt("Enter the item you'd like to order:");
+        let quantity = parseInt(prompt("Enter the quantity (1-99):"));
+
+        let greeting;
+        let today = new Date();
+        let hour = today.getHours();
+        if (hour >= 5 && hour < 12) {
+            greeting = "Good Morning";
+        } else if (hour >= 12 && hour < 18) {
+            greeting = "Good Afternoon";
+        } else {
+            greeting = "Good Evening";
+        }
+
+        let arrivalDate = new Date();
+        arrivalDate.setDate(arrivalDate.getDate() + 7);
+
+        document.write(`<p>${greeting} ${name}, Thank you for ordering!</p>`);
+        document.write(`<p>You have ordered ${quantity} ${item}(s).</p>`);
+        document.write(`<p>Your order is expected to arrive on ${arrivalDate.toDateString()}.</p>`);
+    </script>
+</div>
+</body>
+</html>
